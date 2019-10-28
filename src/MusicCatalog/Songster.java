@@ -19,7 +19,7 @@ public class Songster implements Iterable<Song> {
     public String getName() { return name; }
 
     public void addSong(Song song) {
-        this.songs.add(song);
+        songs.add(song);
     }
 
     public List<Song> findSongs(Predicate<Song> songPredicate) {

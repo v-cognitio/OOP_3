@@ -1,7 +1,4 @@
-import MusicCatalog.Album;
-import MusicCatalog.Artist;
-import MusicCatalog.Catalog;
-import MusicCatalog.Song;
+import MusicCatalog.*;
 import MusicCatalog.Genres.*;
 
 import java.util.List;
@@ -55,6 +52,9 @@ public class OOP_3 {
         }
         System.out.println();
 
+        catalog.addSongster(new Songster("Some songs",SorryYoureNotAWinner, WhenTheSunHits, Labyrinth));
+        System.out.println(catalog.findSongsters(songster -> !songster.findSongs(
+                song -> song == Labyrinth).isEmpty()).get(0).getName());
 
     }
 }
